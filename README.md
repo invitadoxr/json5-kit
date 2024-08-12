@@ -59,11 +59,4 @@ Open any `.json5` file, and the plugin will automatically activate. Use the Comm
 
 I’m a versatile digital creator, offering a range of services from data entry to web development, illustration, and custom projects **on request**. Every task I take on is done with love and dedication, driven by a passion for helping others and making the digital world a better place. Your support fuels my creativity and empowers me to continue doing what I love. Together, we can create something amazing.
 
-<!-- support ♥ -->
-<!-- <div style="box-sizing: border-box; margin: 4px; padding: 4px; display : flex; justify-content : center; flex-wrap : wrap;" > -->
-<div style="text-align : center;" >
-            <a href="https://www.buymeacoffee.com/savh" target="_blank">
-                <img src="./fileicons/buymeacoffe-qr.png" alt="Buy Me A Coffee" style="width : 100%; max-width : 180px" >
-            </a>
-    </div>
-</div>
+[![buymeacoffe](./fileicons/buymeacoffe-qr-small.jpg)](https://www.buymeacoffee.com/savh)

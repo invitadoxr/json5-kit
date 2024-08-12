@@ -11,3 +11,6 @@ vsc-extension-quickstart.md
 
 **./extension
 **./node_modules
+node_modules
+extension
+esbuild.js

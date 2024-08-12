@@ -1,0 +1,13 @@
+{
+	"compilerOptions": {
+		"module": "Node16",
+		"target": "ESNext",
+		"checkJs": true,  /* Typecheck .js files. */
+		"lib": [
+			"ESNext"
+		]
+	},
+	"exclude": [
+		"node_modules"
+	]
+}

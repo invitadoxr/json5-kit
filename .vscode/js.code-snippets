@@ -1,0 +1,57 @@
+{
+    "equal"       : { "prefix": "eq",      "body": [ "=" ] },
+    "double equal": { "prefix": "eqeq",    "body": [ "==" ] },
+    "triple equal": { "prefix": "eqeqeq",  "body": [ "===" ] },
+    "negation"    : { "prefix": "not",     "body": [ "!" ] },
+    "or"          : { "prefix": "or",      "body": [ "||" ] },
+    "and"         : { "prefix": "and",     "body": [ "&&" ] },
+    "quotes"      : { "prefix": "quotes",  "body": [ "\"$0\"" ] },
+    "dollar"      : { "prefix": "dollar",  "body": [ "$" ] },
+    "hash"        : { "prefix": "hash",    "body": [ "#" ] },
+    "pars"        : { "prefix": "pars",    "body": [ "($0)" ] },
+    "keys"        : { "prefix": "keys",    "body": [ "{$0}" ] },
+    "bracks"      : { "prefix": "bracks",  "body": [ "[$0]" ] },
+    "noteq"       : { "prefix": "noteq",   "body": [ "!=" ] },
+    "noteqeq"     : { "prefix": "noteqeq", "body": [ "!==" ] },
+
+    // ----------------
+
+    "print to console": {
+        "prefix": "cl",
+        "body": [
+            "console.log('$1');",
+            "$2"
+        ],
+    },
+
+    "print to console a pair name-value": {
+        "prefix": "clv",
+        "body": [
+            "console.log( '$1', $1$2 );",
+            "$3"
+        ],
+    },
+
+    "a simple if with parenthesis": {
+        "prefix": "ifpars", 
+        "body": [
+            "if ($1) $0",
+        ],
+    },
+
+    "create a jsdoc inline type": {
+        "prefix": "jsdoctype",
+        "body": [
+            "/** @type {$1} */ ",
+        ],
+    },
+
+    "create a jsdoc cast force": {
+        "prefix": "jsdocforce",
+        "body": [
+            "/** @type {$1} */ ( /** @type {unknown} */ ($2) ) $0",
+        ],
+    },
+
+}
+

@@ -1,0 +1,62 @@
+{
+    "name": "json5-kit",
+    "displayName": "JSON5 KIT",
+    "description": "JSON5 with syntax highlighting, formatting, parsing, validation, diagnostics, and watcher.",
+    "version": "0.5.0",
+    "publisher": "savh",
+    "engines": {
+        "vscode": "^1.90.0"
+    },
+    "categories": [
+        "Debuggers",
+        "Formatters",
+        "Snippets",
+        "Language Packs",
+        "Linters",
+        "Programming Languages",
+        "Themes",
+        "Other"
+    ],
+    "icon": "./fileicons/icon.png",
+    "activationEvents": [
+        "onLanguage:json5",
+        "onCommand:json5-formatter.toJson"
+    ],
+    "main": "./extension/index.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "json5-formatter.toJson",
+                "title": "JSON5 to JSON"
+            }
+        ],
+        "languages": [
+            {
+                "id": "json5",
+                "extensions": [
+                    ".json5"
+                ],
+                "configuration": "./syntaxes/language-configuration.json",
+                "icon": {
+                    "light": "./fileicons/icon.png",
+                    "dark": "./fileicons/icon.png"
+                }
+            }
+        ],
+        "grammars": [
+            {
+                "language": "json5",
+                "scopeName": "source.json5",
+                "path": "./syntaxes/json5.tmLanguage.json"
+            }
+        ]
+    },
+    "scripts": {},
+    "dependencies": {
+        "@types/vscode": "^1.92.0",
+        "@vscode/test-electron": "^2.4.1",
+        "@vscode/vsce": "^2.31.1",
+        "json5": "^2.2.3",
+        "prettier": "^3.3.3"
+    }
+}

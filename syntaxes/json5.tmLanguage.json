@@ -1,0 +1,165 @@
+{
+    "scopeName": "source.json5",
+    "patterns": [
+        {
+            "include": "#value"
+        }
+    ],
+    "repository": {
+        "value": {
+            "patterns": [
+                {
+                    "include": "#object"
+                },
+                {
+                    "include": "#array"
+                },
+                {
+                    "include": "#string"
+                },
+                {
+                    "include": "#number"
+                },
+                {
+                    "include": "#boolean"
+                },
+                {
+                    "include": "#null"
+                },
+                {
+                    "include": "#comment"
+                },
+                {
+                    "include": "#invalid"
+                }
+            ]
+        },
+        "object": {
+            "begin": "\\{",
+            "end": "\\}",
+            "patterns": [
+                {
+                    "include": "#key"
+                },
+                {
+                    "include": "#value"
+                },
+                {
+                    "include": "#punctuation"
+                }
+            ]
+        },
+        "array": {
+            "begin": "\\[",
+            "end": "\\]",
+            "patterns": [
+                {
+                    "include": "#value"
+                }
+            ]
+        },
+        "key": {
+            "patterns": [
+                {
+                    "match": "\"[^\"]*\"(?=\\s*:)", 
+                    "name": "variable.name.tag.json5.key"
+                },
+                {
+                    "match": "'[^']*'(?=\\s*:)", 
+                    "name": "variable.name.tag.json5.key"
+                },
+                {
+                    "match": "\\b[\\w$]+(?=\\s*:)", 
+                    "name": "variable.name.tag.json5.key"
+                }
+            ]
+        },
+        "string": {
+            "patterns": [
+                {
+                    "match": "\"[^\"]*\"",
+                    "name": "string.quoted.double.json5"
+                }
+            ]
+        },
+        "singleQuotedString": {
+            "patterns": [
+                {
+                    "match": "'[^']*'",
+                    "name": "string.quoted.single.json5"
+                }
+            ]
+        },
+        "number": {
+            "patterns": [
+                {
+                    "match": "-?\\b\\d+(\\.\\d+)?([eE][+-]?\\d+)?\\b",
+                    "name": "constant.numeric.json5"
+                },
+                {
+                    "match": "0[xX][0-9a-fA-F]+\\b",
+                    "name": "constant.numeric.hexadecimal.json5"
+                }
+            ]
+        },
+        "boolean": {
+            "patterns": [
+                {
+                    "match": "\\b(?:true|false)\\b",
+                    "name": "constant.language.boolean.json5"
+                }
+            ]
+        },
+        "null": {
+            "patterns": [
+                {
+                    "match": "\\bnull\\b",
+                    "name": "constant.language.null.json5"
+                }
+            ]
+        },
+        "comment": {
+            "patterns": [
+                {
+                    "begin": "//",
+                    "end": "$",
+                    "name": "comment.line.double-slash.json5"
+                },
+                {
+                    "begin": "/\\*",
+                    "end": "\\*/",
+                    "name": "comment.block.json5"
+                },
+                {
+                    "begin": "/\\*",
+                    "while": "([^\\*/]|\\*(?!/)|/(?<!\\*))*",
+                    "name": "invalid.comment.block.invalid.json5"
+                }
+            ]
+        },
+        "invalid": {
+            "patterns": [
+                {
+                    "match": "\"[^\"]*\\\\.*\"", 
+                    "name": "invalid.illegal.invalid-comment.json5"
+                },
+                {
+                    "match": "\\/\\/.*\\\\.*$", 
+                    "name": "invalid.illegal.invalid-comment.json5"
+                }
+            ]
+        },
+        "punctuation": {
+            "patterns": [
+                {
+                    "match": ":",
+                    "name": "punctuation.separator.key-value.json5"
+                },
+                {
+                    "match": ",",
+                    "name": "punctuation.separator.array.json5"
+                }
+            ]
+        }
+    }
+}

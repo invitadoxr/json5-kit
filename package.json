@@ -18,6 +18,9 @@
         "Other"
     ],
     "icon": "./fileicons/icon.png",
+    "sponsor": {
+        "url": "https://paypal.me/savh2040?country.x=CO&locale.x=es_XC"
+    },
     "activationEvents": [
         "onLanguage:json5",
         "onCommand:json5-formatter.toJson"

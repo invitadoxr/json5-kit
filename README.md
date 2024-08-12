@@ -1,4 +1,4 @@
-# JSON5 KIT
+# JSON5 KIT 
 
 A powerful JSON5 plugin for VSCode that enhances your JSON5 editing experience with syntax highlighting, formatting, parsing, commands, validation, diagnostics, and watcher.
 

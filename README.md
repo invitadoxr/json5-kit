@@ -2,34 +2,11 @@
 
 A powerful JSON5 plugin for VSCode that enhances your JSON5 editing experience with syntax highlighting, formatting, parsing, commands, validation, diagnostics, and watcher.
 
-<!-- support ♥ -->
-<div style="box-sizing: border-box; margin: 4px; padding: 4px; display : flex; justify-content : center; flex-wrap : wrap;" >
-    <!-- kofi -->
-    <div style="background : #ff5e5f; border-radius : 6px;  max-width : 160px; max-height : 24px; padding : 4px; margin : 4px " >
-        <a href="https://ko-fi.com/E1E611MOEZ" target="_blank">
-            <img src="./fileicons/kofi-logo.svg" alt="Buy Me A Coffee" style="width : 100%" >
-        </a>
-    </div>
-    <!-- paypal -->
-    <div style="background : #e1e1e1; border-radius : 6px;  max-width : 160px; max-height : 24px; padding : 4px; margin : 4px " >
-        <a href="https://paypal.me/savh2040?country.x=CO&locale.x=es_XC" target="_blank">
-            <img src="./fileicons/paypal-logo.svg" alt="Buy Me A Coffee" style="width : 100%;" >
-        </a>
-    </div>
-    <!-- bmac -->
-    <div style="background : #ffdd00; border-radius : 6px;  max-width : 160px; max-height : 24px; padding : 4px; margin : 4px" >
-            <a href="https://www.buymeacoffee.com/savh" target="_blank">
-                <img src="./fileicons/buymeacoffe-white-logo.svg" alt="Buy Me A Coffee" style="width : 100%" >
-            </a>
-    </div>
-</div>
+[![buymeacoffe](./fileicons/buymeacoffe-logo.png)](https://www.buymeacoffee.com/savh)
 
-<!-- support md (retro but unflexible) -->
-<!-- [![buymeacoffe](https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png)](https://www.buymeacoffee.com/savh)
+[![paypalme](./fileicons/paypal-logo.png)](https://paypal.me/savh2040?country.x=CO&locale.x=es_XC)
 
-[![paypalme](https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-color.svg)](https://paypal.me/savh2040?country.x=CO&locale.x=es_XC)
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E611MOEZ) -->
+[![ko-fi](./fileicons/kofi-logo.png)](https://ko-fi.com/E1E611MOEZ)
 
 ## Features
 
